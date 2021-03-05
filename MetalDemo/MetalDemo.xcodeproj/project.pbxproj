@@ -22,6 +22,10 @@
 		A16D6F8725F210F900B921FB /* add.metal in Sources */ = {isa = PBXBuildFile; fileRef = A16D6F8625F210F900B921FB /* add.metal */; };
 		A16D6F8F25F2134600B921FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16D6F8E25F2134600B921FB /* CoreGraphics.framework */; };
 		A16D6FA525F2178300B921FB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A16D6FA425F2178300B921FB /* README.md */; };
+		A16D6FB625F226BF00B921FB /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16D6FB525F226BF00B921FB /* MetalKit.framework */; };
+		A16D6FBA25F2270000B921FB /* AAPLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D6FB925F2270000B921FB /* AAPLViewController.m */; };
+		A16D6FC325F2272A00B921FB /* AAPLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D6FC225F2272A00B921FB /* AAPLRenderer.m */; };
+		A16D6FC825F22CAD00B921FB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A16D6FC725F22CAD00B921FB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,12 @@
 		A16D6F8625F210F900B921FB /* add.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = add.metal; sourceTree = "<group>"; };
 		A16D6F8E25F2134600B921FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A16D6FA425F2178300B921FB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A16D6FB525F226BF00B921FB /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		A16D6FB825F2270000B921FB /* AAPLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AAPLViewController.h; path = ../../../../../../../../../Documents/AAPLViewController.h; sourceTree = "<group>"; };
+		A16D6FB925F2270000B921FB /* AAPLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AAPLViewController.m; path = ../../../../../../../../../Documents/AAPLViewController.m; sourceTree = "<group>"; };
+		A16D6FC125F2272A00B921FB /* AAPLRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AAPLRenderer.h; path = ../../../../../../../../../Documents/AAPLRenderer.h; sourceTree = "<group>"; };
+		A16D6FC225F2272A00B921FB /* AAPLRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AAPLRenderer.m; path = ../../../../../../../../../Documents/AAPLRenderer.m; sourceTree = "<group>"; };
+		A16D6FC725F22CAD00B921FB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16D6FB625F226BF00B921FB /* MetalKit.framework in Frameworks */,
 				A16D6F8F25F2134600B921FB /* CoreGraphics.framework in Frameworks */,
 				A16D6F7C25F2094400B921FB /* Metal.framework in Frameworks */,
 			);
@@ -158,6 +169,7 @@
 		A16D6F7025F206D300B921FB /* Metal */ = {
 			isa = PBXGroup;
 			children = (
+				A16D6FB725F226DA00B921FB /* DrawView */,
 				A16D6F9D25F216DD00B921FB /* Adder */,
 			);
 			path = Metal;
@@ -166,6 +178,7 @@
 		A16D6F7A25F2094400B921FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A16D6FB525F226BF00B921FB /* MetalKit.framework */,
 				A16D6F8E25F2134600B921FB /* CoreGraphics.framework */,
 				A16D6F7B25F2094400B921FB /* Metal.framework */,
 			);
@@ -183,6 +196,18 @@
 				A16D6F8625F210F900B921FB /* add.metal */,
 			);
 			path = Adder;
+			sourceTree = "<group>";
+		};
+		A16D6FB725F226DA00B921FB /* DrawView */ = {
+			isa = PBXGroup;
+			children = (
+				A16D6FC725F22CAD00B921FB /* README.md */,
+				A16D6FB825F2270000B921FB /* AAPLViewController.h */,
+				A16D6FB925F2270000B921FB /* AAPLViewController.m */,
+				A16D6FC125F2272A00B921FB /* AAPLRenderer.h */,
+				A16D6FC225F2272A00B921FB /* AAPLRenderer.m */,
+			);
+			path = DrawView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +314,7 @@
 			files = (
 				A16D6F4525F2069400B921FB /* LaunchScreen.storyboard in Resources */,
 				A16D6F4225F2069400B921FB /* Assets.xcassets in Resources */,
+				A16D6FC825F22CAD00B921FB /* README.md in Resources */,
 				A16D6FA525F2178300B921FB /* README.md in Resources */,
 				A16D6F4025F2069100B921FB /* Main.storyboard in Resources */,
 			);
@@ -318,7 +344,9 @@
 				A16D6F7F25F209A100B921FB /* MetalAdder.m in Sources */,
 				A16D6F3D25F2069100B921FB /* ViewController.m in Sources */,
 				A16D6F7325F208D700B921FB /* CalculateExample.m in Sources */,
+				A16D6FC325F2272A00B921FB /* AAPLRenderer.m in Sources */,
 				A16D6F3725F2069100B921FB /* AppDelegate.m in Sources */,
+				A16D6FBA25F2270000B921FB /* AAPLViewController.m in Sources */,
 				A16D6F4825F2069400B921FB /* main.m in Sources */,
 				A16D6F8725F210F900B921FB /* add.metal in Sources */,
 				A16D6F3A25F2069100B921FB /* SceneDelegate.m in Sources */,
