@@ -21,11 +21,15 @@
 		A16D6F7F25F209A100B921FB /* MetalAdder.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D6F7E25F209A100B921FB /* MetalAdder.m */; };
 		A16D6F8725F210F900B921FB /* add.metal in Sources */ = {isa = PBXBuildFile; fileRef = A16D6F8625F210F900B921FB /* add.metal */; };
 		A16D6F8F25F2134600B921FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16D6F8E25F2134600B921FB /* CoreGraphics.framework */; };
-		A16D6FA525F2178300B921FB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A16D6FA425F2178300B921FB /* README.md */; };
+		A16D6FA525F2178300B921FB /* Adder_README.md in Resources */ = {isa = PBXBuildFile; fileRef = A16D6FA425F2178300B921FB /* Adder_README.md */; };
 		A16D6FB625F226BF00B921FB /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16D6FB525F226BF00B921FB /* MetalKit.framework */; };
 		A16D6FBA25F2270000B921FB /* AAPLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D6FB925F2270000B921FB /* AAPLViewController.m */; };
 		A16D6FC325F2272A00B921FB /* AAPLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D6FC225F2272A00B921FB /* AAPLRenderer.m */; };
 		A16D6FC825F22CAD00B921FB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A16D6FC725F22CAD00B921FB /* README.md */; };
+		A16E5B3925F6482D006576BB /* TriangleRender.m in Sources */ = {isa = PBXBuildFile; fileRef = A16E5B3825F6482D006576BB /* TriangleRender.m */; };
+		A16E5B4125F64D10006576BB /* TriangleShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = A16E5B4025F64D10006576BB /* TriangleShader.metal */; };
+		A16E5B4725F64EC4006576BB /* TriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16E5B4625F64EC4006576BB /* TriangleViewController.m */; };
+		A16E5B5225F65564006576BB /* Triangle-README.md in Resources */ = {isa = PBXBuildFile; fileRef = A16E5B5125F65564006576BB /* Triangle-README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,13 +75,20 @@
 		A16D6F7E25F209A100B921FB /* MetalAdder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalAdder.m; sourceTree = "<group>"; };
 		A16D6F8625F210F900B921FB /* add.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = add.metal; sourceTree = "<group>"; };
 		A16D6F8E25F2134600B921FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A16D6FA425F2178300B921FB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A16D6FA425F2178300B921FB /* Adder_README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Adder_README.md; sourceTree = "<group>"; };
 		A16D6FB525F226BF00B921FB /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		A16D6FB825F2270000B921FB /* AAPLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AAPLViewController.h; path = ../../../../../../../../../Documents/AAPLViewController.h; sourceTree = "<group>"; };
 		A16D6FB925F2270000B921FB /* AAPLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AAPLViewController.m; path = ../../../../../../../../../Documents/AAPLViewController.m; sourceTree = "<group>"; };
 		A16D6FC125F2272A00B921FB /* AAPLRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AAPLRenderer.h; path = ../../../../../../../../../Documents/AAPLRenderer.h; sourceTree = "<group>"; };
 		A16D6FC225F2272A00B921FB /* AAPLRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AAPLRenderer.m; path = ../../../../../../../../../Documents/AAPLRenderer.m; sourceTree = "<group>"; };
 		A16D6FC725F22CAD00B921FB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A16E5B3625F6475D006576BB /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		A16E5B3725F6482D006576BB /* TriangleRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleRender.h; sourceTree = "<group>"; };
+		A16E5B3825F6482D006576BB /* TriangleRender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleRender.m; sourceTree = "<group>"; };
+		A16E5B4025F64D10006576BB /* TriangleShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TriangleShader.metal; sourceTree = "<group>"; };
+		A16E5B4525F64EC4006576BB /* TriangleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleViewController.h; sourceTree = "<group>"; };
+		A16E5B4625F64EC4006576BB /* TriangleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleViewController.m; sourceTree = "<group>"; };
+		A16E5B5125F65564006576BB /* Triangle-README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Triangle-README.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +180,7 @@
 		A16D6F7025F206D300B921FB /* Metal */ = {
 			isa = PBXGroup;
 			children = (
+				A16E5B3525F6471A006576BB /* Triangle */,
 				A16D6FB725F226DA00B921FB /* DrawView */,
 				A16D6F9D25F216DD00B921FB /* Adder */,
 			);
@@ -188,7 +200,7 @@
 		A16D6F9D25F216DD00B921FB /* Adder */ = {
 			isa = PBXGroup;
 			children = (
-				A16D6FA425F2178300B921FB /* README.md */,
+				A16D6FA425F2178300B921FB /* Adder_README.md */,
 				A16D6F7125F208D700B921FB /* CalculateExample.h */,
 				A16D6F7225F208D700B921FB /* CalculateExample.m */,
 				A16D6F7D25F209A100B921FB /* MetalAdder.h */,
@@ -208,6 +220,20 @@
 				A16D6FC225F2272A00B921FB /* AAPLRenderer.m */,
 			);
 			path = DrawView;
+			sourceTree = "<group>";
+		};
+		A16E5B3525F6471A006576BB /* Triangle */ = {
+			isa = PBXGroup;
+			children = (
+				A16E5B5125F65564006576BB /* Triangle-README.md */,
+				A16E5B3625F6475D006576BB /* ShaderTypes.h */,
+				A16E5B3725F6482D006576BB /* TriangleRender.h */,
+				A16E5B3825F6482D006576BB /* TriangleRender.m */,
+				A16E5B4025F64D10006576BB /* TriangleShader.metal */,
+				A16E5B4525F64EC4006576BB /* TriangleViewController.h */,
+				A16E5B4625F64EC4006576BB /* TriangleViewController.m */,
+			);
+			path = Triangle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,10 +338,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16E5B5225F65564006576BB /* Triangle-README.md in Resources */,
 				A16D6F4525F2069400B921FB /* LaunchScreen.storyboard in Resources */,
 				A16D6F4225F2069400B921FB /* Assets.xcassets in Resources */,
 				A16D6FC825F22CAD00B921FB /* README.md in Resources */,
-				A16D6FA525F2178300B921FB /* README.md in Resources */,
+				A16D6FA525F2178300B921FB /* Adder_README.md in Resources */,
 				A16D6F4025F2069100B921FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,11 +372,14 @@
 				A16D6F3D25F2069100B921FB /* ViewController.m in Sources */,
 				A16D6F7325F208D700B921FB /* CalculateExample.m in Sources */,
 				A16D6FC325F2272A00B921FB /* AAPLRenderer.m in Sources */,
+				A16E5B4725F64EC4006576BB /* TriangleViewController.m in Sources */,
 				A16D6F3725F2069100B921FB /* AppDelegate.m in Sources */,
 				A16D6FBA25F2270000B921FB /* AAPLViewController.m in Sources */,
+				A16E5B4125F64D10006576BB /* TriangleShader.metal in Sources */,
 				A16D6F4825F2069400B921FB /* main.m in Sources */,
 				A16D6F8725F210F900B921FB /* add.metal in Sources */,
 				A16D6F3A25F2069100B921FB /* SceneDelegate.m in Sources */,
+				A16E5B3925F6482D006576BB /* TriangleRender.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
