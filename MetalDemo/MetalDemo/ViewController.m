@@ -9,6 +9,7 @@
 #import "CalculateExample.h"
 #import "AAPLViewController.h"
 #import "TriangleViewController.h"
+#import "SynchronizeViewController.h"
 
 @interface ViewController ()
 
@@ -23,7 +24,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    [self triangleExample];
+    [self synchronizeExample];
 }
 
 - (void)calculateExample {
@@ -38,6 +39,11 @@
 
 - (void)triangleExample {
     TriangleViewController *viewController = [[TriangleViewController alloc] init];
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+
+- (void)synchronizeExample {
+    SynchronizeViewController *viewController = [[SynchronizeViewController alloc] init];
     [self presentViewController:viewController animated:YES completion:nil];
 }
 

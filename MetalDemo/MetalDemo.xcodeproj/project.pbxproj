@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A130B58625F70D5A00C57EBB /* AAPLTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = A130B58525F70D5A00C57EBB /* AAPLTriangle.m */; };
+		A130B58F25F713B800C57EBB /* SynchronizeRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A130B58E25F713B800C57EBB /* SynchronizeRenderer.m */; };
+		A130B59525F71D9800C57EBB /* SynchronizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A130B59425F71D9800C57EBB /* SynchronizeViewController.m */; };
+		A130B59A25F7235000C57EBB /* Synchronize-README.md in Resources */ = {isa = PBXBuildFile; fileRef = A130B59925F7235000C57EBB /* Synchronize-README.md */; };
 		A16D6F3725F2069100B921FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D6F3625F2069100B921FB /* AppDelegate.m */; };
 		A16D6F3A25F2069100B921FB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D6F3925F2069100B921FB /* SceneDelegate.m */; };
 		A16D6F3D25F2069100B921FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16D6F3C25F2069100B921FB /* ViewController.m */; };
@@ -50,6 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A130B58425F70D5A00C57EBB /* AAPLTriangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLTriangle.h; sourceTree = "<group>"; };
+		A130B58525F70D5A00C57EBB /* AAPLTriangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAPLTriangle.m; sourceTree = "<group>"; };
+		A130B58D25F713B800C57EBB /* SynchronizeRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynchronizeRenderer.h; sourceTree = "<group>"; };
+		A130B58E25F713B800C57EBB /* SynchronizeRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynchronizeRenderer.m; sourceTree = "<group>"; };
+		A130B59325F71D9800C57EBB /* SynchronizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynchronizeViewController.h; sourceTree = "<group>"; };
+		A130B59425F71D9800C57EBB /* SynchronizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynchronizeViewController.m; sourceTree = "<group>"; };
+		A130B59925F7235000C57EBB /* Synchronize-README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Synchronize-README.md"; sourceTree = "<group>"; };
 		A16D6F3225F2069100B921FB /* MetalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16D6F3525F2069100B921FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A16D6F3625F2069100B921FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -119,6 +130,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A130B57C25F70CC400C57EBB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A16E5B3625F6475D006576BB /* ShaderTypes.h */,
+				A16E5B4025F64D10006576BB /* TriangleShader.metal */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A130B58325F70CE600C57EBB /* Synchronize */ = {
+			isa = PBXGroup;
+			children = (
+				A130B59925F7235000C57EBB /* Synchronize-README.md */,
+				A130B58425F70D5A00C57EBB /* AAPLTriangle.h */,
+				A130B58525F70D5A00C57EBB /* AAPLTriangle.m */,
+				A130B58D25F713B800C57EBB /* SynchronizeRenderer.h */,
+				A130B58E25F713B800C57EBB /* SynchronizeRenderer.m */,
+				A130B59325F71D9800C57EBB /* SynchronizeViewController.h */,
+				A130B59425F71D9800C57EBB /* SynchronizeViewController.m */,
+			);
+			path = Synchronize;
+			sourceTree = "<group>";
+		};
 		A16D6F2925F2069100B921FB = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +214,8 @@
 		A16D6F7025F206D300B921FB /* Metal */ = {
 			isa = PBXGroup;
 			children = (
+				A130B58325F70CE600C57EBB /* Synchronize */,
+				A130B57C25F70CC400C57EBB /* Common */,
 				A16E5B3525F6471A006576BB /* Triangle */,
 				A16D6FB725F226DA00B921FB /* DrawView */,
 				A16D6F9D25F216DD00B921FB /* Adder */,
@@ -226,10 +262,8 @@
 			isa = PBXGroup;
 			children = (
 				A16E5B5125F65564006576BB /* Triangle-README.md */,
-				A16E5B3625F6475D006576BB /* ShaderTypes.h */,
 				A16E5B3725F6482D006576BB /* TriangleRender.h */,
 				A16E5B3825F6482D006576BB /* TriangleRender.m */,
-				A16E5B4025F64D10006576BB /* TriangleShader.metal */,
 				A16E5B4525F64EC4006576BB /* TriangleViewController.h */,
 				A16E5B4625F64EC4006576BB /* TriangleViewController.m */,
 			);
@@ -341,6 +375,7 @@
 				A16E5B5225F65564006576BB /* Triangle-README.md in Resources */,
 				A16D6F4525F2069400B921FB /* LaunchScreen.storyboard in Resources */,
 				A16D6F4225F2069400B921FB /* Assets.xcassets in Resources */,
+				A130B59A25F7235000C57EBB /* Synchronize-README.md in Resources */,
 				A16D6FC825F22CAD00B921FB /* README.md in Resources */,
 				A16D6FA525F2178300B921FB /* Adder_README.md in Resources */,
 				A16D6F4025F2069100B921FB /* Main.storyboard in Resources */,
@@ -371,8 +406,11 @@
 				A16D6F7F25F209A100B921FB /* MetalAdder.m in Sources */,
 				A16D6F3D25F2069100B921FB /* ViewController.m in Sources */,
 				A16D6F7325F208D700B921FB /* CalculateExample.m in Sources */,
+				A130B59525F71D9800C57EBB /* SynchronizeViewController.m in Sources */,
+				A130B58F25F713B800C57EBB /* SynchronizeRenderer.m in Sources */,
 				A16D6FC325F2272A00B921FB /* AAPLRenderer.m in Sources */,
 				A16E5B4725F64EC4006576BB /* TriangleViewController.m in Sources */,
+				A130B58625F70D5A00C57EBB /* AAPLTriangle.m in Sources */,
 				A16D6F3725F2069100B921FB /* AppDelegate.m in Sources */,
 				A16D6FBA25F2270000B921FB /* AAPLViewController.m in Sources */,
 				A16E5B4125F64D10006576BB /* TriangleShader.metal in Sources */,
