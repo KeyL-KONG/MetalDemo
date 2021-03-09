@@ -34,6 +34,12 @@
 		A16E5B4125F64D10006576BB /* TriangleShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = A16E5B4025F64D10006576BB /* TriangleShader.metal */; };
 		A16E5B4725F64EC4006576BB /* TriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16E5B4625F64EC4006576BB /* TriangleViewController.m */; };
 		A16E5B5225F65564006576BB /* Triangle-README.md in Resources */ = {isa = PBXBuildFile; fileRef = A16E5B5125F65564006576BB /* Triangle-README.md */; };
+		A1F98CA625F7701200BEDC25 /* AAPLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F98CA525F7701200BEDC25 /* AAPLImage.m */; };
+		A1F98CB025F7716000BEDC25 /* ComputeTextureRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F98CAF25F7716000BEDC25 /* ComputeTextureRenderer.m */; };
+		A1F98CB825F77D9D00BEDC25 /* Texture.metal in Sources */ = {isa = PBXBuildFile; fileRef = A1F98CB725F77D9D00BEDC25 /* Texture.metal */; };
+		A1F98CBF25F78E3A00BEDC25 /* ShaderTypes.h in Sources */ = {isa = PBXBuildFile; fileRef = A16E5B3625F6475D006576BB /* ShaderTypes.h */; };
+		A1F98CCE25F795A400BEDC25 /* ComputeTextureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F98CCD25F795A400BEDC25 /* ComputeTextureViewController.m */; };
+		A1F98CD225F7966700BEDC25 /* Image.tga in Resources */ = {isa = PBXBuildFile; fileRef = A1F98CAD25F7714B00BEDC25 /* Image.tga */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +106,14 @@
 		A16E5B4525F64EC4006576BB /* TriangleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleViewController.h; sourceTree = "<group>"; };
 		A16E5B4625F64EC4006576BB /* TriangleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleViewController.m; sourceTree = "<group>"; };
 		A16E5B5125F65564006576BB /* Triangle-README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Triangle-README.md"; sourceTree = "<group>"; };
+		A1F98CA425F7701200BEDC25 /* AAPLImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLImage.h; sourceTree = "<group>"; };
+		A1F98CA525F7701200BEDC25 /* AAPLImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAPLImage.m; sourceTree = "<group>"; };
+		A1F98CAD25F7714B00BEDC25 /* Image.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Image.tga; sourceTree = "<group>"; };
+		A1F98CAE25F7716000BEDC25 /* ComputeTextureRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComputeTextureRenderer.h; sourceTree = "<group>"; };
+		A1F98CAF25F7716000BEDC25 /* ComputeTextureRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComputeTextureRenderer.m; sourceTree = "<group>"; };
+		A1F98CB725F77D9D00BEDC25 /* Texture.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Texture.metal; sourceTree = "<group>"; };
+		A1F98CCC25F795A400BEDC25 /* ComputeTextureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComputeTextureViewController.h; sourceTree = "<group>"; };
+		A1F98CCD25F795A400BEDC25 /* ComputeTextureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComputeTextureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +149,7 @@
 			children = (
 				A16E5B3625F6475D006576BB /* ShaderTypes.h */,
 				A16E5B4025F64D10006576BB /* TriangleShader.metal */,
+				A1F98CB725F77D9D00BEDC25 /* Texture.metal */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -214,8 +229,9 @@
 		A16D6F7025F206D300B921FB /* Metal */ = {
 			isa = PBXGroup;
 			children = (
-				A130B58325F70CE600C57EBB /* Synchronize */,
 				A130B57C25F70CC400C57EBB /* Common */,
+				A1F98CA325F76F6D00BEDC25 /* ComputeTexture */,
+				A130B58325F70CE600C57EBB /* Synchronize */,
 				A16E5B3525F6471A006576BB /* Triangle */,
 				A16D6FB725F226DA00B921FB /* DrawView */,
 				A16D6F9D25F216DD00B921FB /* Adder */,
@@ -268,6 +284,20 @@
 				A16E5B4625F64EC4006576BB /* TriangleViewController.m */,
 			);
 			path = Triangle;
+			sourceTree = "<group>";
+		};
+		A1F98CA325F76F6D00BEDC25 /* ComputeTexture */ = {
+			isa = PBXGroup;
+			children = (
+				A1F98CAD25F7714B00BEDC25 /* Image.tga */,
+				A1F98CA425F7701200BEDC25 /* AAPLImage.h */,
+				A1F98CA525F7701200BEDC25 /* AAPLImage.m */,
+				A1F98CAE25F7716000BEDC25 /* ComputeTextureRenderer.h */,
+				A1F98CAF25F7716000BEDC25 /* ComputeTextureRenderer.m */,
+				A1F98CCC25F795A400BEDC25 /* ComputeTextureViewController.h */,
+				A1F98CCD25F795A400BEDC25 /* ComputeTextureViewController.m */,
+			);
+			path = ComputeTexture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F98CD225F7966700BEDC25 /* Image.tga in Resources */,
 				A16E5B5225F65564006576BB /* Triangle-README.md in Resources */,
 				A16D6F4525F2069400B921FB /* LaunchScreen.storyboard in Resources */,
 				A16D6F4225F2069400B921FB /* Assets.xcassets in Resources */,
@@ -403,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F98CBF25F78E3A00BEDC25 /* ShaderTypes.h in Sources */,
 				A16D6F7F25F209A100B921FB /* MetalAdder.m in Sources */,
 				A16D6F3D25F2069100B921FB /* ViewController.m in Sources */,
 				A16D6F7325F208D700B921FB /* CalculateExample.m in Sources */,
@@ -410,10 +442,14 @@
 				A130B58F25F713B800C57EBB /* SynchronizeRenderer.m in Sources */,
 				A16D6FC325F2272A00B921FB /* AAPLRenderer.m in Sources */,
 				A16E5B4725F64EC4006576BB /* TriangleViewController.m in Sources */,
+				A1F98CA625F7701200BEDC25 /* AAPLImage.m in Sources */,
+				A1F98CB025F7716000BEDC25 /* ComputeTextureRenderer.m in Sources */,
 				A130B58625F70D5A00C57EBB /* AAPLTriangle.m in Sources */,
 				A16D6F3725F2069100B921FB /* AppDelegate.m in Sources */,
 				A16D6FBA25F2270000B921FB /* AAPLViewController.m in Sources */,
 				A16E5B4125F64D10006576BB /* TriangleShader.metal in Sources */,
+				A1F98CCE25F795A400BEDC25 /* ComputeTextureViewController.m in Sources */,
+				A1F98CB825F77D9D00BEDC25 /* Texture.metal in Sources */,
 				A16D6F4825F2069400B921FB /* main.m in Sources */,
 				A16D6F8725F210F900B921FB /* add.metal in Sources */,
 				A16D6F3A25F2069100B921FB /* SceneDelegate.m in Sources */,

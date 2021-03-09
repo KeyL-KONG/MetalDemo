@@ -10,6 +10,7 @@
 #import "AAPLViewController.h"
 #import "TriangleViewController.h"
 #import "SynchronizeViewController.h"
+#import "ComputeTextureViewController.h"
 
 @interface ViewController ()
 
@@ -24,7 +25,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    [self synchronizeExample];
+    [self computeTextureExample];
 }
 
 - (void)calculateExample {
@@ -44,6 +45,11 @@
 
 - (void)synchronizeExample {
     SynchronizeViewController *viewController = [[SynchronizeViewController alloc] init];
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+
+- (void)computeTextureExample {
+    ComputeTextureViewController *viewController = [[ComputeTextureViewController alloc] init];
     [self presentViewController:viewController animated:YES completion:nil];
 }
 

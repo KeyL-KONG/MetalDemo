@@ -20,4 +20,14 @@ typedef struct {
     vector_float4 color;
 } AAPLVertex;
 
+typedef enum AAPLTextureIndex {
+    AAPLTextureIndexInput = 0,
+    AAPLTextureIndexOutput = 1,
+} AAPLTextureIndex;
+
+typedef struct {
+    vector_float2 position;
+    vector_float2 textureCoordinate;
+} AAPLTextureVertex;
+
 #endif /* ShaderTypes_h */
