@@ -9,3 +9,5 @@
 ### [Synchronizing CPU and GPU Work](https://github.com/KeyL-KONG/MetalDemo/blob/main/MetalDemo/MetalDemo/Metal/Synchronize/Synchronize-README.md)
 
 ### [Setting Up a Command Structure](https://developer.apple.com/documentation/metal/setting_up_a_command_structure)
+
+### [Processing a Texture in a Compute Function](https://github.com/KeyL-KONG/MetalDemo/blob/main/MetalDemo/MetalDemo/Metal/ComputeTexture/ComputeTexture-README.md)
