@@ -40,6 +40,7 @@
 		A1F98CBF25F78E3A00BEDC25 /* ShaderTypes.h in Sources */ = {isa = PBXBuildFile; fileRef = A16E5B3625F6475D006576BB /* ShaderTypes.h */; };
 		A1F98CCE25F795A400BEDC25 /* ComputeTextureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F98CCD25F795A400BEDC25 /* ComputeTextureViewController.m */; };
 		A1F98CD225F7966700BEDC25 /* Image.tga in Resources */ = {isa = PBXBuildFile; fileRef = A1F98CAD25F7714B00BEDC25 /* Image.tga */; };
+		A1F98CE025F79C2600BEDC25 /* ComputeTexture-README.md in Resources */ = {isa = PBXBuildFile; fileRef = A1F98CDF25F79C2600BEDC25 /* ComputeTexture-README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		A1F98CB725F77D9D00BEDC25 /* Texture.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Texture.metal; sourceTree = "<group>"; };
 		A1F98CCC25F795A400BEDC25 /* ComputeTextureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComputeTextureViewController.h; sourceTree = "<group>"; };
 		A1F98CCD25F795A400BEDC25 /* ComputeTextureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComputeTextureViewController.m; sourceTree = "<group>"; };
+		A1F98CDF25F79C2600BEDC25 /* ComputeTexture-README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "ComputeTexture-README.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +291,7 @@
 		A1F98CA325F76F6D00BEDC25 /* ComputeTexture */ = {
 			isa = PBXGroup;
 			children = (
+				A1F98CDF25F79C2600BEDC25 /* ComputeTexture-README.md */,
 				A1F98CAD25F7714B00BEDC25 /* Image.tga */,
 				A1F98CA425F7701200BEDC25 /* AAPLImage.h */,
 				A1F98CA525F7701200BEDC25 /* AAPLImage.m */,
@@ -408,6 +411,7 @@
 				A16D6F4225F2069400B921FB /* Assets.xcassets in Resources */,
 				A130B59A25F7235000C57EBB /* Synchronize-README.md in Resources */,
 				A16D6FC825F22CAD00B921FB /* README.md in Resources */,
+				A1F98CE025F79C2600BEDC25 /* ComputeTexture-README.md in Resources */,
 				A16D6FA525F2178300B921FB /* Adder_README.md in Resources */,
 				A16D6F4025F2069100B921FB /* Main.storyboard in Resources */,
 			);
